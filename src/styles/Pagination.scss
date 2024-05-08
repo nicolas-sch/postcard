@@ -1,0 +1,36 @@
+@import 'global';
+.pagination-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    background-color: $hookers-green;
+    color: $lavender-web;
+    border: none;
+    padding: 8px 12px; /* Ajuste o padding conforme necessário */
+    margin: 0 3px; /* Ajuste o espaçamento conforme necessário */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.pagination-button:hover {
+    background-color: $powder-blue;
+    color: $gunmetal;
+}
+
+.active {
+    background-color: $powder-blue;
+    color: $gunmetal;
+}
+
+@media (max-width: 768px) {
+    .pagination-button {
+        padding: 6px 10px;
+        margin: 0 2px;
+    }
+}
